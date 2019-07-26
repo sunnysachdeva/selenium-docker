@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">search-module</th></tr>
+<tr><td><a href="#t0">search-test-java</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">13,973</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">search-test-webdriver</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">9,376</td><td></td><td></td></tr>
+<tr><td><a href="#t2">search-test-docker</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">10,931</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t3">search-test-kubernetes</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">12,373</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">1</th><th class="num">0</th><th class="num attn">3</th><th class="num">46,653</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">search-module</th></tr></tbody><tbody id="t0"><tr><th colspan="4">search-test-java &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.searchmodule.tests.SearchTest</td><td><a href="#m0">search</a></td><td rowspan="1">1563980190902</td><td rowspan="1">9374</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">search-test-webdriver &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.searchmodule.tests.SearchTest</td><td><a href="#m1">quitDriver</a></td><td rowspan="1">1563980209927</td><td rowspan="1">432</td></tr><tr><th colspan="4">search-test-webdriver &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.searchmodule.tests.SearchTest</td><td><a href="#m2">search</a></td><td rowspan="1">1563980204009</td><td rowspan="1">5918</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">search-test-docker &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.searchmodule.tests.SearchTest</td><td><a href="#m3">quitDriver</a></td><td rowspan="1">1563980221298</td><td rowspan="1">14</td></tr><tr><th colspan="4">search-test-docker &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.searchmodule.tests.SearchTest</td><td><a href="#m4">search</a></td><td rowspan="1">1563980213041</td><td rowspan="1">8257</td></tr></tbody>
+<tbody id="t3"><tr><th colspan="4">search-test-kubernetes &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.searchmodule.tests.SearchTest</td><td><a href="#m5">quitDriver</a></td><td rowspan="1">1563980233697</td><td rowspan="1">11</td></tr><tr><th colspan="4">search-test-kubernetes &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.searchmodule.tests.SearchTest</td><td><a href="#m6">search</a></td><td rowspan="1">1563980223504</td><td rowspan="1">10193</td></tr></tbody>
+</table>
+<h2>search-test-java</h2><h3 id="m0">com.searchmodule.tests.SearchTest#search</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>java</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>search-test-webdriver</h2><h3 id="m1">com.searchmodule.tests.SearchTest#quitDriver</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;MACPRO107&apos;, ip: &apos;fe80:0:0:0:3c:cd8d:834:915e%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.6&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 63.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 78, moz:profile: /tmp/rust_mozprofile.fQDthC..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 4.9.125-linuxkit, rotatable: false, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 072d616c-47a4-429d-8c5e-559...}
+Session ID: 072d616c-47a4-429d-8c5e-559d8e78386f
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:448)
+	at com.tests.BaseTest.quitDriver(BaseTest.java:45)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.searchmodule.tests.SearchTest#search</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>webdriver</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: Failed to interpret value as array
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;MACPRO107&apos;, ip: &apos;fe80:0:0:0:3c:cd8d:834:915e%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.6&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 63.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 78, moz:profile: /tmp/rust_mozprofile.fQDthC..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 4.9.125-linuxkit, rotatable: false, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 072d616c-47a4-429d-8c5e-559...}
+Session ID: 072d616c-47a4-429d-8c5e-559d8e78386f
+*** Element info: {Using=class name, value=tile--vid}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:349)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByClassName(RemoteWebDriver.java:412)
+	at org.openqa.selenium.By$ByClassName.findElements(By.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:310)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElements(ExpectedConditions.java:914)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$200(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$34.apply(ExpectedConditions.java:1026)
+	at org.openqa.selenium.support.ui.ExpectedConditions$34.apply(ExpectedConditions.java:1021)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+	at com.searchmodule.pages.SearchPage.getResult(SearchPage.java:53)
+	at com.searchmodule.tests.SearchTest.search(SearchTest.java:18)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>search-test-docker</h2><h3 id="m3">com.searchmodule.tests.SearchTest#quitDriver</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;MACPRO107&apos;, ip: &apos;fe80:0:0:0:3c:cd8d:834:915e%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.6&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 63.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 79, moz:profile: /tmp/rust_mozprofile.hHYS4O..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 4.9.125-linuxkit, rotatable: false, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 9c9df69f-0de7-4387-95fd-784...}
+Session ID: 9c9df69f-0de7-4387-95fd-7843c38d9e5d
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:448)
+	at com.tests.BaseTest.quitDriver(BaseTest.java:45)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.searchmodule.tests.SearchTest#search</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>docker</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;MACPRO107&apos;, ip: &apos;fe80:0:0:0:3c:cd8d:834:915e%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.6&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 63.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 79, moz:profile: /tmp/rust_mozprofile.hHYS4O..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 4.9.125-linuxkit, rotatable: false, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: 9c9df69f-0de7-4387-95fd-784...}
+Session ID: 9c9df69f-0de7-4387-95fd-7843c38d9e5d
+*** Element info: {Using=class name, value=tile--vid}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:349)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByClassName(RemoteWebDriver.java:412)
+	at org.openqa.selenium.By$ByClassName.findElements(By.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:310)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElements(ExpectedConditions.java:914)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$200(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$34.apply(ExpectedConditions.java:1026)
+	at org.openqa.selenium.support.ui.ExpectedConditions$34.apply(ExpectedConditions.java:1021)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+	at com.searchmodule.pages.SearchPage.getResult(SearchPage.java:53)
+	at com.searchmodule.tests.SearchTest.search(SearchTest.java:18)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>search-test-kubernetes</h2><h3 id="m5">com.searchmodule.tests.SearchTest#quitDriver</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchSessionException: Tried to run command without establishing a connection
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;MACPRO107&apos;, ip: &apos;fe80:0:0:0:3c:cd8d:834:915e%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.6&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 63.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 307, moz:profile: /tmp/rust_mozprofile.pBzBtS..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 4.9.125-linuxkit, rotatable: false, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: ebcb161b-6179-4dd0-8e8d-f4b...}
+Session ID: ebcb161b-6179-4dd0-8e8d-f4bad5adfccc
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:448)
+	at com.tests.BaseTest.quitDriver(BaseTest.java:45)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.searchmodule.tests.SearchTest#search</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>kubernetes</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;MACPRO107&apos;, ip: &apos;fe80:0:0:0:3c:cd8d:834:915e%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.6&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 63.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 307, moz:profile: /tmp/rust_mozprofile.pBzBtS..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 4.9.125-linuxkit, rotatable: false, setWindowRect: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webdriver.remote.sessionid: ebcb161b-6179-4dd0-8e8d-f4b...}
+Session ID: ebcb161b-6179-4dd0-8e8d-f4bad5adfccc
+*** Element info: {Using=class name, value=tile--vid}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:349)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByClassName(RemoteWebDriver.java:412)
+	at org.openqa.selenium.By$ByClassName.findElements(By.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:310)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElements(ExpectedConditions.java:914)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$200(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$34.apply(ExpectedConditions.java:1026)
+	at org.openqa.selenium.support.ui.ExpectedConditions$34.apply(ExpectedConditions.java:1021)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+	at com.searchmodule.pages.SearchPage.getResult(SearchPage.java:53)
+	at com.searchmodule.tests.SearchTest.search(SearchTest.java:18)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
